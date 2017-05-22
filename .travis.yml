@@ -3,12 +3,10 @@ node_js:
   - 6.10.1
 before_script:
   - npm install
-env:
-  - CI:false
 cache:
   directories:
     - node_modules
 script:
   - npm test
   - npm test -- --coverage
-after_success: "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+after_success: "cat ./client/coverage/lcov.info | ./client/node_modules/coveralls/bin/coveralls.js"
