@@ -17,7 +17,7 @@ if (process.env.NODE_ENV === 'production') {
 
 routes(router);
 
-app.use('/apis', router);
+app.use('/apiss', router);
 
 //error 404
 
