@@ -1,7 +1,0 @@
-{
-  "proxies": {
-    "/api/*": {
-      "origin": "https://hone-ember-todo-rails.herokuapp.com/"
-    }
-  }
-}
