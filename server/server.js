@@ -12,12 +12,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Express only serves static assets in production
 if (process.env.NODE_ENV === 'production') {
   console.log("i am in the server");
-  //app.use(express.static('client/build'));
+  app.use(express.static('client/build'));
 }
 
 routes(router);
 
-app.use('/apiss', router);
+app.use('/api', router);
 
 //error 404
 
