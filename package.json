@@ -17,6 +17,7 @@
   "scripts": {
     "start": "nodemon --exec concurrently \"npm run server\" \"npm run client\"",
     "server": "babel-node --presets es2015,stage-2 server/server.js",
+    "install:client": "npm run babel-node install-client.js",
     "client": "babel-node start-client.js",
     "test:client": "babel-node start-client-test.js",
     "dev": "echo \"This command has been deprecated. Use 'npm start'\" && exit 1",
