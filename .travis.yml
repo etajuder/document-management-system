@@ -3,6 +3,7 @@ node_js:
   - 6.10.1
 before_script:
   - npm install
+  - npm install:client
 cache:
   directories:
     - node_modules
